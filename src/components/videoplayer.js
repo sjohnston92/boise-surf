@@ -16,7 +16,7 @@ const Videoplayer = () => {
 const fetchMSTtime = async() =>{
   try{
     const timeres = await axios.get(
-      'http://worldtimeapi.org/api/timezone/America/Boise'
+      'https://worldtimeapi.org/api/timezone/America/Boise'
     );
     formatingTime(timeres.data.datetime)
     // The Switch is finding the Day 0 being sunday and following the summer schedule*
@@ -68,7 +68,6 @@ const fetchMSTtime = async() =>{
    console.log(err)
   }
 }
-
 
 const formatingTime = (clock) =>{
   const  ttime = clock.toString().split('T');
