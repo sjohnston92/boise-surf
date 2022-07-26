@@ -3,7 +3,7 @@ import {Row,Col} from 'react-bootstrap'
 import axios from 'axios'
 import styled from 'styled-components'
 
-const Weather = () => {
+const Weather = ({counter}) => {
 
   const [temp,setTemp] = useState(0);
   const [tempHigh, setTempHigh] = useState(0);
@@ -32,7 +32,7 @@ const Weather = () => {
     <Row>
       <WeatherCard>
       <Col>
-      <h1>Hello</h1>
+        {counter()}
       </Col>
       <Col>
       Current Weather

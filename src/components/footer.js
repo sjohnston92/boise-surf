@@ -11,11 +11,11 @@ const footer = () => {
 
 
 const Bottom = styled.div`
-position: fixed;
 background: #2b2b2b;
 color:white;
-height: 100%;
-width: 100%;
+height:auto;
+postion:absolute;
+bottom:0;
 `
 
 export default footer

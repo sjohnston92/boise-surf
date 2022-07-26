@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import { Container} from 'react-bootstrap'
 import styled from 'styled-components'
+import Surf from '../surf.png'
 import axios from 'axios'
 
 
@@ -85,7 +86,7 @@ useEffect(() =>{
   return (
     <Container>
       <WaveImage>
-        <img alt="" src=""/>
+        <img width="70px" height="70px"src={Surf}/>
       </WaveImage>
       <WaveHeader>{day}</WaveHeader>
       <WaveChangeBox>
@@ -97,16 +98,14 @@ useEffect(() =>{
 
 const WaveImage = styled.div`
 position: absolute;
-top: 11%;
-right: 3.5%;
-border-radius:50%;
 padding:15px;
+top: 3.5%;
+right: 3.5%;
 background: #60C689;
-margin-bottom:15px;
-display:inline-block;
 justify-content:end;
-width 100px;
-height:100px;
+width 105px;
+border-radius:50%;
+height:auto;
 `
 const WaveChangeBox = styled.div`
 border-radius:15px;
