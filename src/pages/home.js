@@ -16,10 +16,10 @@ const Home = () => {
     <Main>
     <Container>
       <StyledRow>
-        <StyledNav>
+        <StyledNav xs={12} md={4}>
         <Menu />
         </StyledNav>
-        <Col>
+        <Col xs={12} md={8}>
         <Videoplayer />
         <Weather counter={Counter}/>
         </Col>
@@ -35,10 +35,15 @@ padding-top: 20px;
 `
 const StyledNav = styled(Col)`
 margin-top:-150px;
+@media(max-width:900px){
+  margin-top:10px;
 `
 
 const StyledRow = styled.div`
 display:flex;
 align-items:center;
+@media(max-width:900px){
+  flex-direction:column;
+}
 `
 export default Home

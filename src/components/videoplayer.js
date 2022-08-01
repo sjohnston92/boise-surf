@@ -125,7 +125,7 @@ useEffect(() =>{
       </WaveImage>
       <WaveHeader color={color}>{day}</WaveHeader>
       <WaveChangeBox color={color}>
-      <VideoPlayer src="https://v.angelcam.com/iframe?v=v40renevr5&amp;autoplay=1" width={800} height={500}></VideoPlayer>
+      <VideoPlayer src="https://v.angelcam.com/iframe?v=v40renevr5&amp;autoplay=1"></VideoPlayer>
       </WaveChangeBox>
     </Container>
   )
@@ -141,6 +141,10 @@ justify-content:end;
 width 105px;
 border-radius:50%;
 height:auto;
+@media(max-width:900px){
+  display:none;
+}
+
 `
 const WaveChangeBox = styled.div`
 border-radius:15px;
@@ -157,7 +161,7 @@ color:white;
 height:30px;
 font-size:20px;
 font-weight:400;
-width:300px;
+width:40%;
 justify-content:center;
 border-radius:15px 15px 0px 0px;
 
@@ -165,6 +169,12 @@ border-radius:15px 15px 0px 0px;
 
 const VideoPlayer = styled.iframe`
 border-radius:15px;
+postion:relative;
+width:100%;
+height:400px;
+@media(max-width:900px){
+  height:200px;
+}
 `
 
 export default Videoplayer

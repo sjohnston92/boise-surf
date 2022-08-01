@@ -8,12 +8,6 @@ const menu = () => {
     <TitleHead>Boise River</TitleHead>
     <MenuBox>
       <div>
-        <button>Boise River</button>
-      </div>
-      <div>
-        <button>Bend River</button>
-      </div>
-      <div>
         <button>Shop</button>
       </div>
       <div>
@@ -38,6 +32,10 @@ background: #2b2b2b;
 margin-bottom:35px;
 color:white;
 align-items:center;
+@media(max-width:900px){
+  flex-direction:row;
+  justify-content:center;
+}
 `
 const TitleHead = styled.div`
 text-align:center;
