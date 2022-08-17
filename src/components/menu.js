@@ -8,13 +8,22 @@ const menu = () => {
     <TitleHead>Boise River</TitleHead>
     <MenuBox>
       <div>
-        <button>Shop</button>
+        <button>
+            <span>BEND</span>
+            <div className="liquid"></div>
+          </button>
       </div>
       <div>
-      <button>Donate</button>
+      <button>
+            <span>GIVE</span>
+            <div className="liquid"></div>
+          </button>
       </div>
       <div>
-      <button>Contact</button>
+      <button>
+            <span>SHOP</span>
+            <div className="liquid"></div>
+          </button>
       </div>
     </MenuBox>
     </>

@@ -5,7 +5,7 @@ const counter = () => {
   return (
     <>
       <div>Current Surfer Count</div>
-      <h1>12</h1>
+      <h1>4</h1>
       <WarningLabel>*+/- Surfers & Kayakers</WarningLabel>
     </>
 
